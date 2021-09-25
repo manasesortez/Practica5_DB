@@ -159,4 +159,25 @@ SELECT * FROM alumno;
         V. Eliminar la inscripción donde el código de la materia es igual RD02 y el ciclo es igual C1-15
   */
 
-  
+DELETE FROM alumno
+WHERE alumno_carnet = 'IP110943';
+
+SELECT * FROM alumno;
+
+DELETE FROM alumno
+WHERE alumno_carnet LIKE 'M%';
+
+DELETE FROM materia
+WHERE materia.materia_nombre = 'Introduccion a la Programacion';
+
+SELECT * FROM materia;
+
+DELETE FROM alumno
+WHERE alumno.alumno_nombreCompleto = 'Oscar Hernández';
+
+SELECT * FROM alumno;
+
+DELETE FROM inscripcion
+WHERE inscripcion.materia_codigo = 'RD02' AND inscripcion.inscripcion_ciclo = 'C1-15';
+
+SELECT * FROM inscripcion;
