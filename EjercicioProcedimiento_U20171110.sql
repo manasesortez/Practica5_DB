@@ -1,0 +1,4 @@
+CREATE DATABASE ControlAlumnoU20171110;
+
+USE ControlAlumnoU20171110;
+
